@@ -1,0 +1,27 @@
+
+---
+title: "GitHub Advanced"
+author: "Madison Goin"
+format: html
+---
+
+```{r}
+#| message: false
+library(ggplot2)
+```
+
+```{r}
+# AI-generated plot using the built-in mpg dataset
+ggplot(mpg, aes(x = displ, y = hwy, color = class)) +
+  geom_point(size = 3, alpha = 0.7) +
+  labs(
+    title = "Engine Size vs. Highway Fuel Efficiency",
+    x = "Engine Displacement (L)",
+    y = "Highway MPG",
+  color = "Vehicle Class"
+  ) +
+  theme_minimal()
+```
+
+
+  
